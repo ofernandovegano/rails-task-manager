@@ -1,0 +1,10 @@
+<h1>details</h1>
+
+<%= @task.title%>
+<br>
+<%= @task.details%>
+<p>Completed: <%= @task.completed%></p>
+<br>
+<%= link_to 'Atualizar', edit_task_path %> 
+<%= link_to 'Voltar para lista de tarefas', tasks_path %>
+<%= link_to '', delete_path, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'fas fa-trash-alt'%>
